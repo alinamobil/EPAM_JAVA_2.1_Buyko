@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.default_schema">dbo</property>
+    <property name="hibernate.dialect">
+      org.hibernate.dialect.SQLServer2012Dialect
+    </property>
+    <property name="connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="connection.username">ada</property>
+    <property name="connection.password">French-restaurant</property>
+    <property name="hibernate.connection.url">jdbc:sqlserver://french-restaurant.database.windows.net:1433;database=restaurant</property>
+    <property name="show_sql">false</property>
+    <property name="hibernate.connection.autocommit">true</property>
+    <!--<mapping class="com.company.persistence.ClientOrder_DB"/>
+    <mapping class="com.company.persistence.Clients_DB"/>
+    <mapping class="com.company.persistence.DishOrder_DB"/>
+    <mapping class="com.company.persistence.Dishes_DB"/>
+    <mapping class="com.company.persistence.Orders_DB"/>
+    <mapping class="com.company.persistence.Staff_DB"/>-->
+  </session-factory>
+</hibernate-configuration>
